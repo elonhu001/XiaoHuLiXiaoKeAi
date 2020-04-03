@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
 	<head>
 		<title>刁晗小可爱，我爱你一生一世</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -15,11 +15,20 @@
 		<script type="text/javascript" src="js/garden.js"></script>
 		<script type="text/javascript" src="js/functions.js"></script>
 		<script type="text/javascript" src="js/jq.snow.js"></script>
+		
 	</head> 
+	
+	
 
+	
 	<body>
+		<audio autoplay="autoplay" loop="loop" preload="auto"
+        src="./musics/Canon.mp3">
+      	你的浏览器不支持audio标签
+		</audio>	
 		<!--下面是调用方法和参数说明-->
 		<!--调用雪花脚本-->
+		<!--<audio src="./musics/Canon.mp3" preload="meta" loop autoplay id="bgmusic"></audio>-->
 		<script>
 		$(function(){
 			$.fn.snow({ 
@@ -29,17 +38,40 @@
 			});
 		});
 		</script>
+		
+		
+		
+
 
 		<div id="mainDiv">
 			<div id="content">
-				<!--
+				
 				<div id="code">
-					<span class="comments">/**</span><br />
-					<span class="space"/><span class="comments">* Abby：今天是2014年2月14日。</span><br />
-					<span class="space"/><span class="comments">* 我写这个网站来庆祝这个特殊的日子。 </span><br />
-					<span class="space"/><span class="comments">* 虽然，我不是一个很擅长表达言语的人。 </span><br />
-					<span class="space"/><span class="comments">* 但我希望我们能记住我们在一起的每一刻。</span><br />
-					<span class="space"/><span class="comments">*/</span><br />
+					<div style="color:rgb(250, 3, 3)">
+					<h2>/******此网站记录小狐狸和小可爱的爱情*****/</h2><br />
+					</div>
+
+					<div style="color:rgb(253, 7, 142)">
+						<h3>-->2020年3月12日凌晨两点</h3><br />
+					</div>
+
+					<div style="color:rgb(252, 194, 5)">
+						<h3>
+						* 小可爱：胡立伟小哥哥，谈恋爱吗？我懂事，心细又善良哦！<br />
+						* 小狐狸：当让要谈啊！<br />
+						* 小狐狸：刁晗小姐姐，你愿意做我女朋友吗，我温暖，聪明又上进哦！<br />
+						* 小可爱：愿意啊，小哥哥很好！<br />
+						* 小可爱：哎呦，我现在是不是有男朋友的女孩子了！<br />
+						* 小狐狸：是的呢，从现在起你就是我的小可爱了！<br />
+						</h3>
+					</div>
+
+					<img  src="./imgs/1.jpg" alt="小狐狸&小可爱" width="304" height="304">
+					
+					<!--<div class="box">
+						<img src="./imgs/1.jpg" class="bg"/>
+						<img src="./imgs/1.jpg" class="show_img"/> 
+					</div>
 					Girl u = <span class="keyword">new</span> Girl(<span class="string">"Abby"</span>);<br/>
 					Boy i = <span class="keyword">new</span> Boy(<span class="string">"Mark"</span>);<br />
 					<span class="comments">// 今天是二月十四日。 </span><br />
@@ -65,8 +97,12 @@
 					<span class="placeholder"/><span class="comments">// 你可以在任何时候决定。</span><br />
 					<span class="placeholder"/>爱你 = 想你<br /><br />
 					我非常高兴能认识你<br />
-				</div>					
-				-->
+					-->
+					
+				</div>	
+
+				
+				
 
 				<div id="loveHeart">
 					<canvas id="garden"></canvas>
@@ -86,8 +122,8 @@
 				</div>
 			</div>
 		</div>
-		</div>
-
+		
+		<!--</div>
 		<div class="bg1">	
 			<div class="main">
 				<footer style="line-height:20px">
@@ -100,45 +136,48 @@
 			</div>
 		</div>
 		</div>
-
+		-->
 		<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2020, 02, 12);
-		together.setHours(02);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-			
-		if (!document.createElement('canvas').getContext) 
-		{
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-			document.execCommand("stop");
-		} 
-		else 
-		{
-			setTimeout(function () 
+			var offsetX = $("#loveHeart").width() / 2;
+			var offsetY = $("#loveHeart").height() / 2 - 55;
+			var together = new Date();
+			together.setFullYear(2020, 02, 12);
+			together.setHours(02);
+			together.setMinutes(0);
+			together.setSeconds(0);
+			together.setMilliseconds(0);
+				
+			if (!document.createElement('canvas').getContext) 
 			{
-				startHeartAnimation();
-			}, 5000);
+				var msg = document.createElement("div");
+				msg.id = "errorMsg";
+				msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+				document.body.appendChild(msg);
+				$("#code").css("display", "none")
+				$("#copyright").css("position", "absolute");
+				$("#copyright").css("bottom", "10px");
+				document.execCommand("stop");
+			} 
+			else 
+			{
+				setTimeout(function () 
+				{
+					startHeartAnimation();
+				}, 10000);
 
-			timeElapse(together);
-			setInterval(function () 
-			{
 				timeElapse(together);
-			}, 500);
+				setInterval(function () 
+				{
+					timeElapse(together);
+				}, 500);
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
+				adjustCodePosition();
+				$("#code").typewriter();
+			}
 		</script>
-		<embed src="http://sisiyan.sinaapp.com/Love.mp3" autostart="true" loop="true" hidden="true"></embed>
+		
+		<!--George Winston - Variations On The Canon By Pachelbel.mp3
+		<embed src="/musics/Canon.mp3" autostart="true" loop="true" hidden="true"></embed>-->
 	</body>
+	
 </html>
